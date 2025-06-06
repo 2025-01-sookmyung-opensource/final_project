@@ -3,21 +3,33 @@ import json
 from shutil import copy2
 
 # 설정
-json_root = r"C:\Users\user\Downloads\건강관리를 위한 음식 이미지\Training\yoon_data_label"
-image_root = r"C:\Users\user\Downloads\건강관리를 위한 음식 이미지\Training\yoon_data"
+json_root = r"C:\Users\user\Downloads\건강관리를 위한 음식 이미지\yoon\yoon_data_label"
+image_root = r"C:\Users\user\Downloads\건강관리를 위한 음식 이미지\yoon\yoon_data"
 output_img = r"C:\Users\user\Downloads\YOLO_dataset\images"
 output_lbl = r"C:\Users\user\Downloads\YOLO_dataset\labels"
 
+# 클래스 발음기호 → 번호 맵핑
 class_map = {
-    'baegdo': 0,
-    'bang-ultomato': 1,
-    'bab': 2,
-    'bam': 3,
-    'babekyuchikin': 4,
-    'banillaaiseukeulim': 5,
-    'banana': 6,
-    'bageteuppang': 7
+    'bab': 0,
+    'jabchae': 1,
+    'rice eel topping': 2,
+    'jjajangmyeon': 3,
+    'chamchisaendeuwichi': 4,
+    'chikinseuteikeu': 5,
+    'kong-gugsu': 6,
+    'paseuta': 7,
+    'galbigu-i': 8,
+    'gamjagu-i': 9,
+    'gemas-sal': 10,
+    'gejang': 11,
+    'godeung-eogu-i': 12,
+    'gugsu': 13,
+    'gungoguma': 14,
+    'sugjunamul': 15,
+    'seukeulaembeuldeuegeu': 16,
+    'sigeumchi': 17
 }
+
 
 os.makedirs(output_img, exist_ok=True)
 os.makedirs(output_lbl, exist_ok=True)
