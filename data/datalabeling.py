@@ -1,33 +1,33 @@
-class_map = {
-    "백도": "whitepeach",
-    "방울토마토": "cherrytomato",
-    "밥": "rice",
-    "먹는 밤": "chestnut",
-    "바베큐치킨": "bbqchicken",
-    "바닐라아이스크림": "vanillaicecream",
-    "바나나": "banana",
-    "바게트빵": "baguette"
-}
-
 import os
 from pathlib import Path
 from collections import defaultdict
 
 # 클래스 한글 → 영어 맵핑
 class_map = {
-    "백도": "whitepeach",
-    "방울토마토": "cherrytomato",
-    "밥": "rice",
-    "먹는 밤": "chestnut",
-    "바베큐치킨": "bbqchicken",
-    "바닐라아이스크림": "vanillaicecream",
-    "바나나": "banana",
-    "바게트빵": "baguette"
+    "쌀밥": "steamedrice",
+    "잡채": "japchae",
+    "장어덮밥": "eeldonburi",
+    "짜장면": "jjajangmyeon",
+    "참치샌드위치": "tunasandwich",
+    "치킨스테이크": "chickensteak",
+    "콩국수": "coldsoymilknoodles",
+    "파스타": "pasta",
+    "갈비구이": "grilledribs",
+    "감자구이": "bakedpotato",
+    "게맛살": "crabstick",
+    "게장": "marinatedcrab",
+    "고등어구이": "grilledmackerel",
+    "국수": "noodles",
+    "군고구마": "roastedsweetpotato",
+    "숙주나물": "mungbeansprouts",
+    "스크램블드 에그": "scrambledegg",
+    "시금치": "spinach"
 }
 
+
 # 경로 설정
-base_image_dir = Path(r"C:\Users\user\Downloads\건강관리를 위한 음식 이미지\Training\yoon_data")
-base_label_dir = Path(r"C:\Users\user\Downloads\건강관리를 위한 음식 이미지\Training\yoon_data_label")
+base_image_dir = Path(r"C:\Users\user\Downloads\건강관리를 위한 음식 이미지\yoon\yoon_data")
+base_label_dir = Path(r"C:\Users\user\Downloads\건강관리를 위한 음식 이미지\yoon\yoon_data_label")
 
 # 한글 클래스명을 이름순 정렬
 sorted_korean_classes = sorted(class_map.keys())
