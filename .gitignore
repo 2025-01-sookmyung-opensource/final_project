@@ -8,3 +8,6 @@ env/
 
 # macOS 시스템 파일
 .DS_Store
+
+# Python test files
+interface_test.py
