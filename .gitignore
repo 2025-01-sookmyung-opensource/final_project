@@ -11,3 +11,6 @@ env/
 
 # Python test files
 interface_test.py
+
+# .gitignore
+.streamlit/secrets.toml
