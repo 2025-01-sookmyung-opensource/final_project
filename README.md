@@ -1,4 +1,4 @@
-## [배포 링크](https://streamlit-nutrition-app-hcfhnno4lq-du.a.run.app/)
+## [배포 링크](https://streamlit-nutrition-app-436215849351.asia-northeast3.run.app/)
 <div style="text-align: center;">
         <img src="https://github.com/user-attachments/assets/b8380832-de00-4470-9db2-1cb9feaea12f" width="600"/>
     </div>
