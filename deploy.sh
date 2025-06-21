@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 프로젝트 및 서비스 정보
-PROJECT_ID="opensource-project-463412"
+PROJECT_ID="436215849351"
 SERVICE_NAME="streamlit-nutrition-app"
 REGION="asia-northeast3"  # 한국 리전 (서울)
 IMAGE_URI="gcr.io/$PROJECT_ID/$SERVICE_NAME"
