@@ -121,7 +121,9 @@
 - 이미지 크기 : 640x640
 - batch 크기 : 16
 - 학습 프레임 워크 → ![Colab](https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white) + T4 GPU 환경
-
+- [우진 :: Image_Train_v8.ipynb](https://github.com/2025-01-sookmyung-opensource/final_project/blob/woojin/Image_Train_v8.ipynb)
+- [지윤 :: modelTrain ](https://github.com/2025-01-sookmyung-opensource/final_project/tree/pre-yoon/modelTrain)
+  
 ### 5.4 필수 라이브러리 설치
 
 ```bash
