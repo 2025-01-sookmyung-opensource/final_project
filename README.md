@@ -18,7 +18,8 @@
   - [5.1 AIhub :: 음식 이미지 및 영양정보 텍스트]()
   - [5.2 음식 분류 데이터셋 라벨링 프로젝트]()
   - [5.3 YOLOv8n 학습설정]()
-  - [5.4 필수 라이브러리 설치]()
+  - [ 5.4 양추정 :: MobileNetV3 & EfficientNet]()
+  - [5.5 필수 라이브러리 설치]()
 - [6. License]()
 - [7. 팀원 소개]()
 
@@ -116,15 +117,37 @@
 
 </details>
 
-### 5.3 YOLOv8n 학습설정
+### 5.3 음식 분류 :: YOLOv8n 학습설정
 - epoch 수 : 100
-- 이미지 크기 : 640x640
+- 이미지 크기 (전처리) : 640x640
 - batch 크기 : 16
 - 학습 프레임 워크 → ![Colab](https://img.shields.io/badge/Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white) + T4 GPU 환경
 - [우진 :: Image_Train_v8.ipynb](https://github.com/2025-01-sookmyung-opensource/final_project/blob/woojin/Image_Train_v8.ipynb)
 - [지윤 :: modelTrain ](https://github.com/2025-01-sookmyung-opensource/final_project/tree/pre-yoon/modelTrain)
   
-### 5.4 필수 라이브러리 설치
+### 5.4 양추정 :: MobileNetV3 & EfficientNet
+- 클래스 구조
+```
+김밥/
+├── Q1 / (아주 적음)
+├── Q2 /
+├── Q3 /
+├── Q4 /
+└── Q5/ (매우 많음)
+```
+- EfficientNet 모델 학습
+  - 이미지 디렉터리, txt 디렉터리 구조 및 YOLO 형식 바운딩 박스 정보는 이전과 동일
+  - 이미지 크기 (전처리) : 224 x 224 → Tensor 변환
+  - 데이터 증강 : RandomResizedCrop 후 Resize로 크기 맞추기 전략
+  - 모델의 전체 정확도는 약 30.4%로, 무작위 추정보다 크게 높지 않아 분류 성능이 전반적으로 낮음
+- MobileNetV3 모델 학습
+  - 사전학습된 MobileNetV3-Small 모델을 불러온 뒤, 최종 분류 레이어를 5개의 섭취량 등급(Q1~Q5)으로 수정
+  - 이미지 크기 (전처리) : 224 x 224 → Tensor 변환
+  - epoch : 10회
+- [민지 :: MobileNetV3_amount_estimator.ipynb ](https://github.com/2025-01-sookmyung-opensource/final_project/blob/pre-min/MobileNetV3_amount_estimator.ipynb)
+- [효정 :: EfficientNet_amount_estimator.ipynb](https://github.com/2025-01-sookmyung-opensource/final_project/blob/amount-estimation-model/efficientnet_amount_estimator.ipynb)
+
+### 5.5 필수 라이브러리 설치
 
 ```bash
 # PyTorch, torchvision, timm (MobileNetV3, EfficientNet 포함)
