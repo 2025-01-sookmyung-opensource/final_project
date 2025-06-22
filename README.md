@@ -1,4 +1,5 @@
 # 🍱 당뇨병 환우를 위한 개인 맞춤형 식단 관리 서비스 🍱
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/404fc008-39fc-46de-9a99-5620d06b102e" />
 
 
 ## 프로젝트소개
@@ -104,8 +105,8 @@ Google Colab (T4 GPU)
 또는 로컬 GPU (CUDA 지원)
 
 ## 📜 flowchart
+![image](https://github.com/user-attachments/assets/a9367596-c3aa-4942-91cd-f1c9daee0f1c)
 
-![alt text](흐름요약도-1.png)
 
 ## 서비스 흐름
 ![image](https://github.com/user-attachments/assets/b3843a83-c7c7-404c-a314-7aef1fd685a8)
@@ -118,8 +119,10 @@ Google Colab (T4 GPU)
 4. Gemini API를 이용한 식단 피드백 제공
 
 ##  ✔ 실행 예시 결과
-- 구현 동영상
->https://www.youtube.com/watch?v=jqrcQ8ywoS4&feature=youtu.be
+- 시연영상
+  
+[![구현 동영상 썸네일](https://img.youtube.com/vi/jqrcQ8ywoS4/0.jpg)](https://www.youtube.com/watch?v=jqrcQ8ywoS4)
+
 
 ##   팀원 소개 
 
